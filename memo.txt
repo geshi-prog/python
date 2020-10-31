@@ -15,3 +15,6 @@ keyにクリップボードから公開鍵をペースト
 ssh -T git@github.com
 適当なブランチを作って
 git@github.com:geshi-prog/python.git
+
+何かしらファイルを作成してからcommitすることでブランチが作成される。
+そこからDevelopブランチを作成
