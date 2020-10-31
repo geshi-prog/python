@@ -1,0 +1,17 @@
+apt update
+apt install git
+git config --global user.name geshi-prog
+git config --global user.email math6pasca@gmail.com
+ssh-keygen -t rsa -C "math6pasca@gmail.com"
+cat /root/.ssh/id_rsa.pub
+Githubのページに移りアカウント設定の"SSH and GPG keys"を選択
+
+右上の"New SSH key"を押し、
+Titleに自分が分かる名前
+keyにクリップボードから公開鍵をペースト
+"Add SSH key"を押す
+で完了です。
+
+ssh -T git@github.com
+適当なブランチを作って
+git@github.com:geshi-prog/python.git
